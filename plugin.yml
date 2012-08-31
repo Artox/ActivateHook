@@ -2,8 +2,8 @@ name: ActivateHook
 main: com.github.artox.ActivateHook.Main
 version: 1.0
 commands:
-   basic:
+   activate_forum_account:
       description: Activates the forum account
       usage: /activate_forum_account <forumaccname>
-      permission: mc_accountlog.basic
+      permission: mc_accountlog.activate_forum_account
       permission-message: You dont have permission!

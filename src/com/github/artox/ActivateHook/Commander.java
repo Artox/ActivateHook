@@ -40,7 +40,10 @@ public class Commander implements CommandExecutor {
 	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-		if(sender instanceof Player) {} else return false;
+		if(sender instanceof Player) {} else {
+			sender.sendMessage("This command only works for players");
+			return false;
+		}
 		if(args.length != 1) return false;
 		
 		String mcacc = sender.getName();
